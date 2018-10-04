@@ -12,7 +12,10 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.
+    @post = Post.new
+    @post.title = "Title Goes Here"
+    @post.description = "Desc goes here..."
+    @post.save
   end
   # add create method here
 end
